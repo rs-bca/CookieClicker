@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<script>
+    var cookieCount =0;
+</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie clicker</title>
+    <style>
+        html {
+    background-color:#4a2257;
+    font-family:'Times New Roman', Times, serif;
+}
+        h1 {
+            font-family: helvetica, arial, sans-serif;
+            text-align: center;
+        }
+
+        body {
+            width: 640px;
+            margin: 0 auto;
+        }
+
+        .full-img {
+            display: block;
+            width: 640px;
+            height: 640px;
+        }
+        .full-img:hover{
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<h1>Cookie Clicker Game</h1>
+<p>kind of...</p>
+<body>
+
+    <a href=# onclick="add()"><img class="full-img" src="images/cookie_PNG13656.png" title="Click Me!"></a>
+    <input type="text" id="text" disabled style= text-align:center>
+    <script>
+        function add(){
+            cookieCount = cookieCount + 1
+            document.getElementById('text').value = cookieCount;
+        }
+    </script>
+</body>
+</html>
